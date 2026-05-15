@@ -60,6 +60,10 @@ Click [START] to proceed with the installation.
 
 Once the installation is complete, click the [Exit] button to close the installer, and then `reboot the controller.`
 
+<div style="max-width:fit-content;">
+
 {% hint style="warning" %}
 The installed APP will operate normally only after the controller is rebooted.
 {% endhint %}
+
+</div>

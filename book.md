@@ -112,8 +112,6 @@ Please refer to the table below.
 </div>
 
 
-</div>
-
 #### Command Types
 
 a. `xcopy`
@@ -142,6 +140,9 @@ b. `rcopy`
 
 #### Path Macros
 
+<div style="max-width:fit-content;">
+
+
 | Macro | Description |
 | :--- | :--- |
 | **`$(AppDir)`** | The location of the `hrc_installer` executable file on the inserted USB<br>(Corresponds to `Install_Apps` in section 2.2.1) |
@@ -153,10 +154,14 @@ b. `rcopy`
 General users should use `$(RemoteAppsDir)` as the target path when using the `rcopy` command.
 {% endhint %}
 
+</div>
+
 
 #### Writing Format
 
 The format for the App Installer configuration file is as follows:
+
+<div style="max-width:fit-content;">
 
 ```bash
 # App Description
@@ -164,6 +169,8 @@ The format for the App Installer configuration file is as follows:
 # Comment
 Command Source_Path Target_Path
 ```
+
+</div>
 
 - The `App Description` must be added as a comment on the very first line.  
   The content of this field will be displayed on the `title bar` when the `hrc_installer` program is executed.
@@ -174,6 +181,8 @@ Command Source_Path Target_Path
 
 Ex) xcopy
 
+<div style="max-width:fit-content;">
+
 ```bash
 # XPanel 
 
@@ -181,6 +190,7 @@ Ex) xcopy
 xcopy Xpanel /usr/share/hyundai/hi6/apps/
 xcopy XpanelFiles /usr/share/hyundai/hi6/apps/Xpanel/
 ```
+</div>
 
 Ex) rcopy
 
@@ -189,6 +199,8 @@ Ex) rcopy
 
 rcopy $(AppDir)/App_Name $(RemoteAppsDir)
 ```
+
+</div>
 
 [__SOURCE](3-execution/README.md)
 # 3. Execution
@@ -258,12 +270,16 @@ Click [START] to proceed with the installation.
 
 Once the installation is complete, click the [Exit] button to close the installer, and then `reboot the controller.`
 
+<div style="max-width:fit-content;">
+
 {% hint style="warning" %}
 The installed APP will operate normally only after the controller is rebooted.
 {% endhint %}
 
+</div>
+
 [__SOURCE](3-execution/2-result.md)
-## 3.2 Check Installation Logs (Results)
+## 3.2 Check Execution Logs
 
 Installation progress and final results can be checked in real-time through the log window in the center of the installer screen.  
 You can intuitively understand the status through the text colors.
@@ -300,6 +316,8 @@ You can intuitively understand the status through the text colors.
 
 If a `FAIL` occurs during installation, check the red error message printed in the log window and refer to the table below to identify the cause and take action.
 
+<div style="max-width:fit-content;">
+
 
 | Error Message (Log Output) | Cause and Action |
 | :--- | :--- |
@@ -314,3 +332,5 @@ If a `FAIL` occurs during installation, check the red error message printed in t
 | **Fail: Source disappeared during scan. (Check USB connection)** | The source target disappeared during the file scan. Check if the USB connection was disconnected during installation. |
 | **Fail: Cannot open local file. (USB connection / File Permission issue)** | Failed to read the local file. Check the file's read permissions or for USB connection issues. |
 | **Fail: Process line crashed. / cannot be started. / failed.** | The external system command (`>`) process specified by the user did not execute normally or terminated abnormally during execution. |
+
+</div>

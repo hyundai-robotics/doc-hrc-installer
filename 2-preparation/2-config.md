@@ -49,8 +49,6 @@ Please refer to the table below.
 </div>
 
 
-</div>
-
 #### Command Types
 
 a. `xcopy`
@@ -79,6 +77,9 @@ b. `rcopy`
 
 #### Path Macros
 
+<div style="max-width:fit-content;">
+
+
 | Macro | Description |
 | :--- | :--- |
 | **`$(AppDir)`** | The location of the `hrc_installer` executable file on the inserted USB<br>(Corresponds to `Install_Apps` in section 2.2.1) |
@@ -90,10 +91,14 @@ b. `rcopy`
 General users should use `$(RemoteAppsDir)` as the target path when using the `rcopy` command.
 {% endhint %}
 
+</div>
+
 
 #### Writing Format
 
 The format for the App Installer configuration file is as follows:
+
+<div style="max-width:fit-content;">
 
 ```bash
 # App Description
@@ -101,6 +106,8 @@ The format for the App Installer configuration file is as follows:
 # Comment
 Command Source_Path Target_Path
 ```
+
+</div>
 
 - The `App Description` must be added as a comment on the very first line.  
   The content of this field will be displayed on the `title bar` when the `hrc_installer` program is executed.
@@ -111,6 +118,8 @@ Command Source_Path Target_Path
 
 Ex) xcopy
 
+<div style="max-width:fit-content;">
+
 ```bash
 # XPanel 
 
@@ -118,6 +127,7 @@ Ex) xcopy
 xcopy Xpanel /usr/share/hyundai/hi6/apps/
 xcopy XpanelFiles /usr/share/hyundai/hi6/apps/Xpanel/
 ```
+</div>
 
 Ex) rcopy
 
@@ -126,3 +136,5 @@ Ex) rcopy
 
 rcopy $(AppDir)/App_Name $(RemoteAppsDir)
 ```
+
+</div>

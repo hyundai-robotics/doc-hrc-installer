@@ -2,6 +2,8 @@
 
 If a `FAIL` occurs during installation, check the red error message printed in the log window and refer to the table below to identify the cause and take action.
 
+<div style="max-width:fit-content;">
+
 
 | Error Message (Log Output) | Cause and Action |
 | :--- | :--- |
@@ -16,3 +18,5 @@ If a `FAIL` occurs during installation, check the red error message printed in t
 | **Fail: Source disappeared during scan. (Check USB connection)** | The source target disappeared during the file scan. Check if the USB connection was disconnected during installation. |
 | **Fail: Cannot open local file. (USB connection / File Permission issue)** | Failed to read the local file. Check the file's read permissions or for USB connection issues. |
 | **Fail: Process line crashed. / cannot be started. / failed.** | The external system command (`>`) process specified by the user did not execute normally or terminated abnormally during execution. |
+
+</div>
