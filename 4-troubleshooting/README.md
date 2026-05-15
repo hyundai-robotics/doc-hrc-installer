@@ -2,6 +2,8 @@
 
 설치 중 `FAIL`이 발생한 경우, 로그 창에 출력된 빨간색 에러 메시지를 확인하고 아래 표를 참고하여 원인을 파악 및 조치하십시오.
 
+<div style="max-width:fit-content;">
+
 
 | 에러 메시지 (로그 출력) | 발생 원인 및 조치 방법 |
 | :--- | :--- |
@@ -16,3 +18,6 @@
 | **Fail: Source disappeared during scan. (Check USB connection)** | 파일 스캔 중 원본 대상이 사라졌습니다. 설치 도중 USB 연결이 끊어졌는지 확인하십시오. |
 | **Fail: Cannot open local file. (USB connection / File Permission issue)** | 로컬 파일 읽기에 실패했습니다. 파일의 읽기 권한이나 USB 접속 불량 문제를 확인하십시오. |
 | **Fail: Process line crashed. / cannot be started. / failed.** | 사용자가 지정한 외부 시스템 명령어(`>`) 프로세스가 정상적으로 실행되지 않았거나 도중 비정상 종료되었습니다. |
+
+
+</div>

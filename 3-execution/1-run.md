@@ -60,7 +60,10 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 
 설치가 모두 완료되면 [Exit] 버튼을 눌러 인스톨러를 종료 후, `제어기를 재부팅합니다.`
 
+<div style="max-width:fit-content;">
+
 {% hint style="warning" %}
 제어기가 재부팅돼야 설치한 APP 이 정상적으로 동작합니다.
 {% endhint %}
 
+</div>

@@ -48,7 +48,6 @@ COM(제어기 본체)나 TP(티칭펜던트)에 설치하고자 하는 타겟 Ap
 | **인스톨러 명령어** | **`xcopy`**  | **`rcopy`**  |
 
 
-</div>
 
 #### 명령어 종류
 
@@ -126,3 +125,6 @@ xcopy XpanelFiles /usr/share/hyundai/hi6/apps/Xpanel/
 
 rcopy $(AppDir)/App_Name $(RemoteAppsDir)
 ```
+
+</div>
+
