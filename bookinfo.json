@@ -1,0 +1,27 @@
+﻿{
+    "langCode": "ko",
+    "series": "${cont_model} 제어기",
+    "title": "기능 설명서 - 앱(App) 인스톨러",
+    "publisher": "HD현대로보틱스",
+    "tocTitle": "목차",
+    "tocTitleElements": "[ \"h1\", \"h2\" ]",
+    "docId": "${cont_model:upper}INSTALLER_KO_001",
+    "references": [
+        {
+            "title": "${cont_model} 제어기 조작 설명서 - TP630",
+            "id": "${cont_model:upper}OPTP630_KO"
+        },
+        {
+            "title": "${cont_model} 제어기 기능 설명서 - Teach Pendant앱(App)",
+            "id": "${cont_model:upper}TPAPP_KO_001"
+        },
+        {
+            "title": "${cont_model} 제어기 기능 설명서 - SDK",
+            "id": "${cont_model:upper}SDK_KO_001"
+        },
+        {
+            "title": "${cont_model} 제어기 기능 설명서 - Open API",
+            "id": "${cont_model:upper}OPENAPI_KO_001"
+        }
+    ]
+}
