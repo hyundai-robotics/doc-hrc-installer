@@ -1,6 +1,6 @@
-﻿# 2. 설치 준비
+﻿# 2. Preparation
 
-이 장에서는 설치 준비 단계를 설명합니다.
+This chapter explains the preparation steps for installation.
 
-2.1. [`앱 인스톨러` 다운로드](./1-download.md)  
-2.2. [`앱 인스톨러` 설정 파일 작성](./2-config.md) 
+2.1. [Download `App Installer`](./1-download.md)  
+2.2. [Write `App Installer` configuration file](./2-config.md)

@@ -1,3 +1,3 @@
-﻿# 3. 실행
+﻿# 3. Execution
 
-앱 인스톨러 준비가 완료된 USB를 이용하여 실제 앱 설치를 진행하고, 그 결과를 확인합니다.
+Using the prepared App Installer USB, proceed with the actual app installation and check the results.

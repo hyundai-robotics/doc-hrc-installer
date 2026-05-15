@@ -1,31 +1,31 @@
-﻿## 2.1 앱 인스톨러 다운로드
+﻿## 2.1 Download Installer
 
-### 2.1.1. 앱 인스톨러 설치 과정
+### 2.1.1. App Installer Download Process
 
-1. [HD현대로보틱스 공식 홈페이지의 다운로드 센터](https://hd-hyundairobotics.com/download-center/list)에서 `hrc_installer.zip` 파일을 다운받습니다.
-2. USB 메모리(FAT32 포맷 권장)의 최상단(Root) 경로에 압축을 해제합니다.
-3. 하기 디렉토리 구조를 확인합니다.
+1. Download the `hrc_installer.zip` file from the [HD Hyundai Robotics Download Center](https://hd-hyundairobotics.com/download-center/list).
+2. Extract the zip file to the root directory of a USB drive (FAT32 format is recommended).
+3. Check the directory structure below.
 
-### 2.1.2. 디렉토리 구조 확인
+### 2.1.2. Checking the Directory Structure
 
-- 하기 디렉토리 구조와 동일한지 확인합니다.
-- 하기 4가지 파일 모두 존재하는지 확인합니다.
+- Ensure it exactly matches the directory structure below.
+- Verify that all 4 files exist.
 
 <div style="max-width:fit-content;">
 
 {% hint style="warning" %}
-하기 구조가 반드시 지켜져야 앱 인스톨러가 TP 에서 정상적으로 확인됩니다.
+This exact structure must be strictly maintained for the App Installer to be recognized normally on the TP.
 {% endhint %}
 
 ```text
-📁 USB_ROOT (USB 최상단)
+📁 USB_ROOT (USB Root)
  ┗ 📁 hi6
     ┗ 📁 apps
        ┗ 📁 Install_Apps
-          ┣ 📄 hrc_installer       (인스톨러 실행 파일)
-          ┣ 📄 hrc_installer.cfg   (설치 설정 파일)
-          ┣ 📄 hrc_installer.png   (인스톨러 아이콘 이미지)
-          ┗ 📄 info.json           (앱 정보 파일)
+          ┣ 📄 hrc_installer       (Installer executable file)
+          ┣ 📄 hrc_installer.cfg   (Installation config file)
+          ┣ 📄 hrc_installer.png   (Installer icon image)
+          ┗ 📄 info.json           (App info file)
 ```
 
 </div>
