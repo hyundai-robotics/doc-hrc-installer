@@ -34,6 +34,7 @@
 ### 2.1.1. 앱 인스톨러 설치 과정
 
 1. [HD현대로보틱스 공식 홈페이지의 다운로드 센터](https://hd-hyundairobotics.com/download-center/list)에서 `hrc_installer.zip` 파일을 다운받습니다.
+  <img src="../_assets/0_download_center.png" style="max-height:200px;">
 2. USB 메모리(FAT32 포맷 권장)의 최상단(Root) 경로에 압축을 해제합니다.
 3. 하기 디렉토리 구조를 확인합니다.
 
@@ -261,10 +262,13 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 
 설치가 모두 완료되면 [Exit] 버튼을 눌러 인스톨러를 종료 후, `제어기를 재부팅합니다.`
 
+<div style="max-width:fit-content;">
+
 {% hint style="warning" %}
 제어기가 재부팅돼야 설치한 APP 이 정상적으로 동작합니다.
 {% endhint %}
 
+</div>
 
 [__SOURCE](3-execution/2-result.md)
 ## 3.2 설치 로그(결과) 확인
@@ -311,6 +315,8 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 
 설치 중 `FAIL`이 발생한 경우, 로그 창에 출력된 빨간색 에러 메시지를 확인하고 아래 표를 참고하여 원인을 파악 및 조치하십시오.
 
+<div style="max-width:fit-content;">
+
 
 | 에러 메시지 (로그 출력) | 발생 원인 및 조치 방법 |
 | :--- | :--- |
@@ -325,3 +331,6 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 | **Fail: Source disappeared during scan. (Check USB connection)** | 파일 스캔 중 원본 대상이 사라졌습니다. 설치 도중 USB 연결이 끊어졌는지 확인하십시오. |
 | **Fail: Cannot open local file. (USB connection / File Permission issue)** | 로컬 파일 읽기에 실패했습니다. 파일의 읽기 권한이나 USB 접속 불량 문제를 확인하십시오. |
 | **Fail: Process line crashed. / cannot be started. / failed.** | 사용자가 지정한 외부 시스템 명령어(`>`) 프로세스가 정상적으로 실행되지 않았거나 도중 비정상 종료되었습니다. |
+
+
+</div>
