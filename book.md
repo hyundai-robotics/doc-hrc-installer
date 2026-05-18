@@ -32,7 +32,8 @@ This chapter explains the preparation steps for installation.
 
 ### 2.1.1. App Installer Download Process
 
-1. Download the `hrc_installer.zip` file from the [HD Hyundai Robotics Download Center](https://hd-hyundairobotics.com/download-center/list).
+1. Download the `hrc_installer.zip` file from the [HD Hyundai Robotics Download Center](https://hd-hyundairobotics.com/download-center/list).  
+  <img src="../_assets/0_download_center.png" style="max-height:250px;">
 2. Extract the zip file to the root directory of a USB drive (FAT32 format is recommended).
 3. Check the directory structure below.
 
@@ -103,7 +104,7 @@ Please refer to the table below.
 <div style="max-width:fit-content;">
 
 
-| Category | [TP App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}) | [Plug-in App](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}) |
+| Category | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP App</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">Plug-in App</a> |
 | :--- | :--- | :--- |
 | **Description** | App running directly on the TP screen<br>(e.g., [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/2-installation/2-install?cont_model=${cont_model})) | App running via the internal server on the COM<br>(e.g., [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/en/README)) |
 | **Installation Location** | TP | COM |

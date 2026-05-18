@@ -40,7 +40,7 @@ Please refer to the table below.
 <div style="max-width:fit-content;">
 
 
-| Category | [TP App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}) | [Plug-in App](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}) |
+| Category | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP App</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">Plug-in App</a> |
 | :--- | :--- | :--- |
 | **Description** | App running directly on the TP screen<br>(e.g., [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/2-installation/2-install?cont_model=${cont_model})) | App running via the internal server on the COM<br>(e.g., [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/en/README)) |
 | **Installation Location** | TP | COM |
