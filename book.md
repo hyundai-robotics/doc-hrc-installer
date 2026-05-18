@@ -33,8 +33,8 @@
 
 ### 2.1.1. 앱 인스톨러 설치 과정
 
-1. [HD현대로보틱스 공식 홈페이지의 다운로드 센터](https://hd-hyundairobotics.com/download-center/list)에서 `hrc_installer.zip` 파일을 다운받습니다.
-  <img src="../_assets/0_download_center.png" style="max-height:200px;">
+1. [HD현대로보틱스 공식 홈페이지의 다운로드 센터](https://hd-hyundairobotics.com/download-center/list)에서 `hrc_installer.zip` 파일을 다운받습니다.  
+  <img src="../_assets/0_download_center.png" style="max-height:250px;">
 2. USB 메모리(FAT32 포맷 권장)의 최상단(Root) 경로에 압축을 해제합니다.
 3. 하기 디렉토리 구조를 확인합니다.
 
@@ -106,7 +106,7 @@ COM(제어기 본체)나 TP(티칭펜던트)에 설치하고자 하는 타겟 Ap
 <div style="max-width:fit-content;">
 
 
-| 구분 | [TP 전용 앱](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/1-intro/README?cont_model=${cont_model}) | [플러그인(plug-in) 앱](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/ko/1-intro/2-plugin-app-concept?cont_model=${cont_model}) |
+| Category | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP 전용 앱(App)</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">Plug-in 앱(Apps)</a> |
 | :--- | :--- | :--- |
 | **설명** | TP 화면에서 직접 구동되는 앱<br>(예: [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/2-installation/2-install?cont_model=Hi6)) | COM 내부 서버를 통해 구동되는 앱<br>(예: [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/ko/README)) |
 | **설치 위치** | TP  | COM |
