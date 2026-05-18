@@ -3,6 +3,7 @@
 ### 2.1.1. App Installer Download Process
 
 1. Download the `hrc_installer.zip` file from the [HD Hyundai Robotics Download Center](https://hd-hyundairobotics.com/download-center/list).
+  <img src="../_assets/0_download_center.png" style="max-height:200px;">
 2. Extract the zip file to the root directory of a USB drive (FAT32 format is recommended).
 3. Check the directory structure below.
 
