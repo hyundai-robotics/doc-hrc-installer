@@ -2,8 +2,8 @@
 
 ### 2.1.1. 앱 인스톨러 설치 과정
 
-1. [HD현대로보틱스 공식 홈페이지의 다운로드 센터](https://hd-hyundairobotics.com/download-center/list)에서 `hrc_installer.zip` 파일을 다운받습니다.
-  <img src="../_assets/0_download_center.png" style="max-height:200px;">
+1. [HD현대로보틱스 공식 홈페이지의 다운로드 센터](https://hd-hyundairobotics.com/download-center/list)에서 `hrc_installer.zip` 파일을 다운받습니다.  
+  <img src="../_assets/0_download_center.png" style="max-height:250px;">
 2. USB 메모리(FAT32 포맷 권장)의 최상단(Root) 경로에 압축을 해제합니다.
 3. 하기 디렉토리 구조를 확인합니다.
 
