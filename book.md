@@ -108,7 +108,7 @@ COM(제어기 본체)나 TP(티칭펜던트)에 설치하고자 하는 타겟 Ap
 
 | Category | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP 전용 앱(App)</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">Plug-in 앱(Apps)</a> |
 | :--- | :--- | :--- |
-| **설명** | TP 화면에서 직접 구동되는 앱<br>(예: [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/2-installation/2-install?cont_model=Hi6)) | COM 내부 서버를 통해 구동되는 앱<br>(예: [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/ko/README)) |
+| **설명** | TP 화면에서 직접 구동되는 앱<br>(예: [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/2-installation/2-install?cont_model=${cont_model})) | COM 내부 서버를 통해 구동되는 앱<br>(예: [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/ko/README)) |
 | **설치 위치** | TP  | COM |
 | **인스톨러 명령어** | **`xcopy`**  | **`rcopy`**  |
 
@@ -271,6 +271,13 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 </div>
 
 [__SOURCE](3-execution/2-result.md)
+<style>
+  .blue-box {
+    color: dodgerblue; /* 또는 blue */
+    font-size: 10%; /* 크기 조절도 가능 */
+  }
+</style>
+
 ## 3.2 설치 로그(결과) 확인
 
 설치 진행 상황과 최종 결과는 인스톨러 화면 중앙의 로그 창을 통해 실시간으로 확인할 수 있습니다.  
@@ -278,13 +285,13 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 
 ### 3.2.1 로그 색상 안내
 
-- 🔵 파란색: 현재 실행 중인 명령어 (예: xcopy, rcopy 등)
+- 🟦 파란색: 현재 실행 중인 명령어 (예: xcopy, rcopy 등)
 
-- ⚫ 검은색: 복사 진행 상태 및 일반 세부 정보
+- ⬛ 검은색: 복사 진행 상태 및 일반 세부 정보
 
-- 🟢 초록색: 개별 명령 정상 처리 완료 (Pass)
+- 🟩 초록색: 개별 명령 정상 처리 완료 (Pass)
 
-- 🔴 빨간색: 개별 명령 작업 실패 및 에러 발생 사유 (Fail)
+- 🟥 빨간색: 개별 명령 작업 실패 및 에러 발생 사유 (Fail)
 
 
 ### 3.2.2 최종 설치 결과 판별
@@ -293,7 +300,7 @@ TP 홈에서 USB 연결 상태를 확인합니다.
 
 - TotalLines 란, `hrc_installer.cfg` 에서 입력한 명령어 줄 수를 의미합니다.
 
-- 설치 성공: 🟢 PASS: TotalLines=[전체 명령 수], NG=0  
+- 설치 성공: 🟩 PASS: TotalLines=[전체 명령 수], NG=0  
   -> 에러 없이 모든 앱 설치가 정상적으로 완료되었음을 의미합니다.
 
 <figure>
@@ -301,7 +308,7 @@ TP 홈에서 USB 연결 상태를 확인합니다.
   <figcaption>Fig 6. 인스톨러 정상 종료 화면</figcaption>
 </figure>
 
-- 설치 실패: 🔴 FAIL: TotalLines=[전체 명령 수], NG=[실패 건수]  
+- 설치 실패: 🟥 FAIL: TotalLines=[전체 명령 수], NG=[실패 건수]  
   -> 일부 또는 전체 명령에서 에러가 발생했음을 의미합니다. 위쪽의 빨간색 에러 메시지를 확인하고 조치해야 합니다.
 
 <figure>

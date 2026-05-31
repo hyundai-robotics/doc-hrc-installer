@@ -43,7 +43,7 @@ COM(제어기 본체)나 TP(티칭펜던트)에 설치하고자 하는 타겟 Ap
 
 | Category | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP 전용 앱(App)</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">Plug-in 앱(Apps)</a> |
 | :--- | :--- | :--- |
-| **설명** | TP 화면에서 직접 구동되는 앱<br>(예: [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/2-installation/2-install?cont_model=Hi6)) | COM 내부 서버를 통해 구동되는 앱<br>(예: [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/ko/README)) |
+| **설명** | TP 화면에서 직접 구동되는 앱<br>(예: [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/2-installation/2-install?cont_model=${cont_model})) | COM 내부 서버를 통해 구동되는 앱<br>(예: [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/ko/README)) |
 | **설치 위치** | TP  | COM |
 | **인스톨러 명령어** | **`xcopy`**  | **`rcopy`**  |
 
