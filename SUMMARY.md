@@ -1,7 +1,9 @@
 ﻿# Table of contents
 
 * [${cont_model} Controller Function Manual - App Installer](./README.md)
-* [Precautions](0-about-this-manual/precautions.md)
+* [About the Manual](0-about-this-manual/README.md)
+  * [Precautions](0-about-this-manual/precautions.md)
+  * [Safety Cautions](0-about-this-manual/safety-notice.md)
 * [1. Overview](1-intro/README.md)
 * [2. Preparation](2-preparation/README.md)
     * [2.1 Download Installer](2-preparation/1-download.md)
