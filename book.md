@@ -1,90 +1,83 @@
 ﻿
 [__SOURCE](./README.md)
-# ${cont_model} Controller Function Manual - App Installer 
-
+# ${cont_model} 控制器功能手册 - 应用程序安装程序
 [__SOURCE](0-about-this-manual/README.md)
-# About the Manual
-
+# 关于手册
 [__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
+# 注意事项
 
-{% include file="en/precautions.md" %}
-
+{% include file="zh/precautions.md" %}
 [__SOURCE](0-about-this-manual/safety-notice.md)
-# Safety Cautions
+# 安全注意事项
 
-{% include file="en/safety-notice.md" %}
-
+{% include file="zh/safety-notice.md" %}
 [__SOURCE](1-intro/README.md)
-# 1. Overview
+# 1. 概述
 
-To fully understand this manual, you should be familiar with the following:
+要完全理解本手册，您应该熟悉以下内容：
 
-- [${cont_model} Controller Operation Manual - TP630](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=${cont_model})
-- [${cont_model} Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/README?cont_model=${cont_model})
-- [${cont_model} Controller Function Manual - SDK](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/README?cont_model=${cont_model})
-- [${cont_model} Controller Function Manual - Open API](https://hrbook-hrc.web.app/#/view/doc-hi6-open-api/en/README?cont_model=${cont_model})
+- [${cont_model} 控制器操作手册 - TP630](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/README?cont_model=${cont_model})
+- [${cont_model} 控制器功能手册 - 教学挂件应用](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/zh/README?cont_model=${cont_model})
+- [${cont_model} 控制器功能手册 - SDK](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/zh/README?cont_model=${cont_model})
+- [${cont_model} 控制器功能手册 - 开放 API](https://hrbook-hrc.web.app/#/view/doc-hi6-open-api/zh/README?cont_model=${cont_model})
 
-This manual provides instructions on how to install user-developed apps using the `hrc_installer`.
-
+本手册提供有关如何使用 `hrc_installer` 安装用户开发的应用程序的说明。
 [__SOURCE](2-preparation/README.md)
-# 2. Preparation
+# 2. 准备
 
-This chapter explains the preparation steps for installation.
+本章节解释安装的准备步骤。
 
-2.1. [Download `App Installer`](./1-download.md)  
-2.2. [Write `App Installer` configuration file](./2-config.md)
-
+2.1. [下载 `App Installer`](./1-download.md)  
+2.2. [编写 `App Installer` 配置文件](./2-config.md)
 [__SOURCE](2-preparation/1-download.md)
-## 2.1 Download Installer
+## 2.1 下载安装程序
 
-### 2.1.1. App Installer Download Process
+### 2.1.1. 应用程序安装程序下载流程
 
-1. Download the `hrc_installer.zip` file from the [HD Hyundai Robotics Download Center](https://hd-hyundairobotics.com/download-center/list).  
+1. 从 [HD Hyundai Robotics 下载中心](https://hd-hyundairobotics.com/download-center/list) 下载 `hrc_installer.zip` 文件。  
   <img src="../_assets/0_download_center.png" style="max-height:250px;">
-2. Extract the zip file to the root directory of a USB drive (FAT32 format is recommended).
-3. Check the directory structure below.
+2. 将 zip 文件解压到 USB 驱动器的根目录下（推荐使用 FAT32 格式）。
+3. 检查以下目录结构。
 
-### 2.1.2. Checking the Directory Structure
+### 2.1.2. 检查目录结构
 
-- Ensure it exactly matches the directory structure below.
-- Verify that all 4 files exist.
+- 确保其与下面的目录结构完全匹配。
+- 验证所有 4 个文件是否存在。
 
 <div style="max-width:fit-content;">
 
 {% hint style="warning" %}
-This exact structure must be strictly maintained for the App Installer to be recognized normally on the TP.
+此结构必须严格保持，以便在 TP 上正常识别应用程序安装程序。
 {% endhint %}
 
 ```text
-📁 USB_ROOT (USB Root)
+📁 USB_ROOT (USB 根目录)
  ┗ 📁 hi6
     ┗ 📁 apps
        ┗ 📁 Install_Apps
-          ┣ 📄 hrc_installer       (Installer executable file)
-          ┣ 📄 hrc_installer.cfg   (Installation config file)
-          ┣ 📄 hrc_installer.png   (Installer icon image)
-          ┗ 📄 info.json           (App info file)
+          ┣ 📄 hrc_installer       (安装程序可执行文件)
+          ┣ 📄 hrc_installer.cfg   (安装配置文件)
+          ┣ 📄 hrc_installer.png   (安装程序图标图片)
+          ┗ 📄 info.json           (应用程序信息文件)
 ```
 
 </div>
-
 [__SOURCE](2-preparation/2-config.md)
-## 2.2 Writing Configuration File
+## 2.2 编写配置文件
 
-Once the App Installer is ready on the USB, proceed with the following steps.
+一旦 USB 上的应用程序安装程序准备就绪，请按照以下步骤进行操作。
 
-1. Place the app to install inside the `apps` folder.
-2. Modify the App Installer configuration file (`hrc_installer.cfg`).
+1. 将要安装的应用程序放入 `apps` 文件夹中。
+2. 修改应用程序安装程序配置文件 (`hrc_installer.cfg`)。
 
-### 2.2.1. Placing the App to Install
+### 2.2.1. 放置要安装的应用程序
 
-Copy the target App folder or file you wish to install on the COM (controller) or TP (Teach Pendant) under the `apps` folder.
+将要在 COM（控制器）或 TP（教学挂件）上安装的目标应用程序文件夹或文件复制到 `apps` 文件夹下。
 
 <div style="max-width:fit-content;">
 
 ```text
-📁 USB_ROOT (USB Root)
+📁 USB_ROOT (USB 根目录)
  ┗ 📁 hi6
     ┗ 📁 apps
        ┗ 📁 Install_Apps
@@ -92,254 +85,237 @@ Copy the target App folder or file you wish to install on the COM (controller) o
           ┣ 📄 hrc_installer.cfg
           ┣ 📄 hrc_installer.png
           ┣ 📄 info.json
-          ┗ 📁 mastering           <-- (App to install)
+          ┗ 📁 mastering           <-- (要安装的应用程序)
 ```
 
 </div>
 
+### 2.2.2. 编写应用程序安装程序配置文件 (hrc_installer.cfg)
 
-### 2.2.2. Writing the App Installer Configuration File (hrc_installer.cfg)
+配置文件 (hrc_installer.cfg) 作为一种任务规范。  
+为了确保正确操作，请根据以下格式使用文本编辑器进行编辑。
 
-The configuration file (hrc_installer.cfg) serves as a type of task specification.  
-For proper operation, edit it with a text editor according to the format below.
+#### 应用程序类型
 
-
-#### App Types
-
-The commands used in the App Installer configuration file vary depending on the type of app you intend to install.
-Please refer to the table below.
+所使用的应用程序安装程序配置文件中的命令取决于您打算安装的应用程序类型。  
+请参阅下表。
 
 <div style="max-width:fit-content;">
 
-
-| Category | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP App</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">Plug-in App</a> |
+| 类别 | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/zh/1-intro/README?cont_model=${cont_model}" style="color:#222222">TP 应用</a> | <a href="https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/zh/1-intro/2-plugin-app-concept?cont_model=${cont_model}" style="color:#222222">插件应用</a> |
 | :--- | :--- | :--- |
-| **Description** | App running directly on the TP screen<br>(e.g., [Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/2-installation/2-install?cont_model=${cont_model})) | App running via the internal server on the COM<br>(e.g., [pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/en/README)) |
-| **Installation Location** | TP | COM |
-| **Installer Command** | **`xcopy`** | **`rcopy`** |
+| **描述** | 直接在 TP 屏幕上运行的应用程序<br>(例如，[Cimon Xpanel](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/zh/2-installation/2-install?cont_model=${cont_model})) | 通过 COM 上的内部服务器运行的应用程序<br>(例如，[pickit](https://hrbook-hrc.web.app/#/view/doc-hi6-pickit/zh/README)) |
+| **安装位置** | TP | COM |
+| **安装命令** | **`xcopy`** | **`rcopy`** |
 
 </div>
 
-
-#### Command Types
+#### 命令类型
 
 a. `xcopy`
-- **Usage**: Used to install a TP-dedicated app inside the TP.
-- **Format**: `xcopy` \[Source Path\] \[Target Path\]
-- **Behavior**:
-  - The copying method changes depending on whether there is a slash (/) at the end of the target path.
-  - When there is no / at the end (Copy by specifying a name):
-    - The source folder/file is copied and overwrites the target path with the specified name.  
-    - Ex) `xcopy` $(AppDir)/Xpanel /usr/share/hyundai/hi6/apps/Xpanel2  
-          ➔ Copied under the name Xpanel2.
-  - When there is a / at the end (Copy to subfolder):
-    - The source folder/file is copied into the target path with its original name.  
-    - Ex) `xcopy` $(AppDir)/Xpanel /usr/share/hyundai/hi6/apps/ 
-           ➔ The entire Xpanel folder is copied into the apps folder.
+- **用法**：用于在 TP 内部安装专用 TP 应用程序。
+- **格式**：`xcopy` \[源路径\] \[目标路径\]
+- **行为**：
+  - 复制方法取决于目标路径末尾是否有斜杠（/）。
+  - 当末尾没有 / 时（通过指定名称进行复制）：
+    - 源文件夹/文件被复制并用指定名称覆盖目标路径。  
+    - 例) `xcopy` $(AppDir)/Xpanel /usr/share/hyundai/hi6/apps/Xpanel2  
+          ➔ 以名称 Xpanel2 复制。
+  - 当末尾有 / 时（复制到子文件夹）：
+    - 源文件夹/文件以其原始名称复制到目标路径。  
+    - 例) `xcopy` $(AppDir)/Xpanel /usr/share/hyundai/hi6/apps/ 
+           ➔ 整个 Xpanel 文件夹被复制到 apps 文件夹中。
 
 b. `rcopy` 
-- **Usage:** Used to install a plug-in app inside the COM.
-- **Format:** `rcopy` \[Source Path\] \[Target Path\]
-- **Behavior**:
-  - The source is uploaded with its original folder name inside the folder specified in the target path.
-  - If the target path does not exist on the server, it automatically creates the hierarchical folders (`mkdir`).
-  - Ex) `rcopy $(AppDir)/pickit $(RemoteAppsDir)/temp`  
-        ➔ If the `temp` folder does not exist in `$(RemoteAppsDir)` on the COM, it creates the folder and then uploads the `pickit` folder under it.
+- **用法**：用于在 COM 内部安装插件应用程序。
+- **格式**：`rcopy` \[源路径\] \[目标路径\]
+- **行为**：
+  - 源与其原始文件夹名称被上传到目标路径中指定的文件夹内。
+  - 如果目标路径在服务器上不存在，它会自动创建层级文件夹 (`mkdir`)。
+  - 例) `rcopy $(AppDir)/pickit $(RemoteAppsDir)/temp`  
+        ➔ 如果 `$(RemoteAppsDir)` 上的 `temp` 文件夹不存在，它会创建该文件夹，然后将 `pickit` 文件夹上传到其中。
 
-
-#### Path Macros
+#### 路径宏
 
 <div style="max-width:fit-content;">
 
-
-| Macro | Description |
+| 宏 | 描述 |
 | :--- | :--- |
-| **`$(AppDir)`** | The location of the `hrc_installer` executable file on the inserted USB<br>(Corresponds to `Install_Apps` in section 2.2.1) |
-| **`$(RemoteAppsDir)`** | The default app installation path on the COM |
-| **`$(RemoteReleaseDir)`** | The built-in plug-in app installation path on the COM |
-
+| **`$(AppDir)`** | 插入的 USB 上 `hrc_installer` 可执行文件的位置<br>(对应于第 2.2.1 节中的 `Install_Apps`) |
+| **`$(RemoteAppsDir)`** | COM 上默认的应用程序安装路径 |
+| **`$(RemoteReleaseDir)`** | COM 上内置插件应用程序的安装路径 |
 
 {% hint style="warning" %}
-General users should use `$(RemoteAppsDir)` as the target path when using the `rcopy` command.
+普通用户在使用 `rcopy` 命令时，应使用 `$(RemoteAppsDir)` 作为目标路径。
 {% endhint %}
 
 </div>
 
+#### 编写格式
 
-#### Writing Format
-
-The format for the App Installer configuration file is as follows:
+应用程序安装程序配置文件的格式如下：
 
 <div style="max-width:fit-content;">
 
 ```bash
-# App Description
+# 应用程序描述
 
-# Comment
-Command Source_Path Target_Path
+# 注释
+命令 源路径 目标路径
 ```
 
 </div>
 
-- The `App Description` must be added as a comment on the very first line.  
-  The content of this field will be displayed on the `title bar` when the `hrc_installer` program is executed.
+- `应用程序描述` 必须作为注释添加到第一行。  
+  此字段的内容将在执行 `hrc_installer` 程序时显示在 `标题栏` 上。
 
-- A `Comment` is used to add supplementary explanations for the configuration commands and will not appear on the installer's log screen.
+- `注释` 用于添加对配置命令的补充说明，并且不会出现在安装程序的日志屏幕上。
 
-- The `Command line` must be written according to the `Format` described in the `Command Types` section above.
+- `命令行` 必须按照上述 `命令类型` 部分中描述的 `格式` 编写。
 
-Ex) xcopy
+例) xcopy
 
 <div style="max-width:fit-content;">
 
 ```bash
 # XPanel 
 
-# Install Xpanel and XpanelFiles under TP apps
+# 在 TP 应用程序下安装 Xpanel 和 XpanelFiles
 xcopy Xpanel /usr/share/hyundai/hi6/apps/
 xcopy XpanelFiles /usr/share/hyundai/hi6/apps/Xpanel/
 ```
 </div>
 
-Ex) rcopy
+例) rcopy
 
 ```bash
-# App_Description 
+# 应用程序描述 
 
 rcopy $(AppDir)/App_Name $(RemoteAppsDir)
 ```
 
 </div>
-
 [__SOURCE](3-execution/README.md)
-# 3. Execution
+# 3. 执行
 
-Using the prepared App Installer USB, proceed with the actual app installation and check the results.
-
+使用准备好的应用程序安装 USB，进行实际的应用程序安装并检查结果。
 [__SOURCE](3-execution/1-run.md)
-## 3.1 Run Installer
+## 3.1 运行安装程序
 
-Once the USB is ready, follow the steps below to run the installer.
+一旦 USB 准备好，请按照以下步骤运行安装程序。
 
-#### Step 1 
+#### 第一步
 
-Insert the USB memory stick prepared with the App Installer into the USB port of the TP.
+将准备好的应用程序安装程序的 USB 内存棒插入 TP 的 USB 端口。
 
 <figure>
   <img src="../_assets/0_usb_ready.png" style="max-height:200px;">
-  <figcaption>Fig 1. Prepared USB folder structure and configuration file contents</figcaption>
+  <figcaption>图 1. 准备好的 USB 文件夹结构和配置文件内容</figcaption>
 </figure>
 
-Check the USB connection status on the TP Home screen.
+检查 TP 主屏幕上的 USB 连接状态。
 
 <figure>
   <img src="../_assets/0_usb_ready_tp_home.png" style="max-height:350px;">
-  <figcaption>Fig 2. Checking the USB connection status on the taskbar</figcaption>
+  <figcaption>图 2. 在任务栏上检查 USB 连接状态</figcaption>
 </figure>
 
+#### 第二步
 
-
-#### Step 2
-
-Verify the App Installer.  
-- TP Home > Service > 10: App > Click Location > Click the App Installer you want to install
+验证应用程序安装程序。  
+- TP 主屏幕 > 服务 > 10: 应用 > 点击位置 > 点击您想要安装的应用程序安装程序
 
 <figure>
   <img src="../_assets/1_app_installer_list.png" style="max-height:350px;">
-  <figcaption>Fig 3. Verifying the Installer</figcaption>
+  <figcaption>图 3. 验证安装程序</figcaption>
 </figure>
 
+#### 第三步
 
-#### Step 3 
-
-Click the [F4: Run] button at the bottom of the app screen to execute the installer.
+点击应用程序屏幕底部的 [F4: 运行] 按钮以执行安装程序。
 
 <figure>
   <img src="../_assets/2_app_installer_executed.png" style="max-height:350px;">
-  <figcaption>Fig 4. Installer execution screen</figcaption>
+  <figcaption>图 4. 安装程序执行屏幕</figcaption>
 </figure>
 
-#### Step 4
+#### 第四步
 
-Click [START] to proceed with the installation.
+点击 [开始] 以继续安装。
 
 <figure>
   <img src="../_assets/3_app_installer_start.png" style="max-height:350px;">
-  <figcaption>Fig 5-1. Installer start screen</figcaption>
+  <figcaption>图 5-1. 安装程序开始屏幕</figcaption>
 </figure>
 
 <figure>
   <img src="../_assets/4_app_installer_finish.png" style="max-height:350px;">
-  <figcaption>Fig 5-2. Installer finish screen</figcaption>
+  <figcaption>图 5-2. 安装程序完成屏幕</figcaption>
 </figure>
 
+#### 第五步
 
-
-#### Step 5
-
-Once the installation is complete, click the [Exit] button to close the installer, and then `reboot the controller.`
+安装完成后，点击 [退出] 按钮以关闭安装程序，然后 `重启控制器。`
 
 <div style="max-width:fit-content;">
 
 {% hint style="warning" %}
-The installed APP will operate normally only after the controller is rebooted.
+安装的应用程序只有在控制器重启后才能正常运行。
 {% endhint %}
 
 </div>
-
 [__SOURCE](3-execution/2-result.md)
-## 3.2 Check Execution Logs
+## 3.2 检查执行日志
 
-Installation progress and final results can be checked in real-time through the log window in the center of the installer screen.  
-You can intuitively understand the status through the text colors.
+安装进度和最终结果可以通过安装程序界面中心的日志窗口实时查看。  
+您可以通过文本颜色直观地了解状态。
 
-### 3.2.1 Log Color Guide
+### 3.2.1 日志颜色指南
 
-- 🟦 Blue: Currently executing command (e.g., xcopy, rcopy, etc.)
-- ⬛ Black: Copy progress status and general details
-- 🟩 Green: Individual command successfully processed (Pass)
-- 🟥 Red: Individual command failed and the reason for the error (Fail)
+- 🟦 蓝色：当前正在执行的命令（例如，xcopy、rcopy等）
+- ⬛ 黑色：复制进度状态和一般细节
+- 🟩 绿色：单个命令成功处理（通过）
+- 🟥 红色：单个命令失败及错误原因（失败）
 
-### 3.2.2 Determining Final Installation Results
+### 3.2.2 确定最终安装结果
 
-- Once all tasks are completed, the final summary result is printed on the very last line of the log window.
-- TotalLines refers to the number of command lines entered in `hrc_installer.cfg`.
-- Installation Success: 🟩 PASS: TotalLines=[Total number of commands], NG=0  
-  -> This means all app installations were completed normally without any errors.
+- 一旦所有任务完成，最终摘要结果将在日志窗口的最后一行打印出来。
+- TotalLines指的是在`hrc_installer.cfg`中输入的命令行数量。
+- 安装成功： 🟩 PASS: TotalLines=[Total number of commands], NG=0  
+  -> 这意味着所有应用程序安装均已正常完成，没有任何错误。
 
 <figure>
   <img src="../_assets/4_app_installer_finish.png" style="max-height:350px;">
-  <figcaption>Fig 6. Installer normal completion screen</figcaption>
+  <figcaption>图6. 安装程序正常完成界面</figcaption>
 </figure>
 
-- Installation Failure: 🟥 FAIL: TotalLines=[Total number of commands], NG=[Number of failures]  
-  -> This means an error occurred in some or all of the commands. Check the red error message above and take action.
+- 安装失败： 🟥 FAIL: TotalLines=[Total number of commands], NG=[Number of failures]  
+  -> 这意味着某些或所有命令发生了错误。请检查上面的红色错误信息并采取措施。
 
 <figure>
   <img src="../_assets/5_app_installer_finish.png" style="max-height:350px;">
-  <figcaption>Fig 7. Installer execution failure screen</figcaption>
+  <figcaption>图7. 安装程序执行失败界面</figcaption>
 </figure>
-
 [__SOURCE](4-troubleshooting/README.md)
-# 4. Troubleshooting & Error Codes
+# 4. 故障排除与错误代码
 
-If a `FAIL` occurs during installation, check the red error message printed in the log window and refer to the table below to identify the cause and take action.
+如果在安装过程中发生 `FAIL`，请检查日志窗口中打印的红色错误消息，并参考下表以识别原因并采取行动。
 
 <div style="max-width:fit-content;">
 
 
-| Error Message (Log Output) | Cause and Action |
+| 错误消息 (日志输出) | 原因和措施 |
 | :--- | :--- |
-| **Unsupported command** | Unsupported command. Check for typos in the commands (`xcopy`, `rcopy`, etc.) in the `hrc_installer.cfg` file. |
-| **Failed in deleting previous folder.** | Failed to delete an existing folder at the target path. It may be an internal permission issue on the controller, or the file might be in use. |
-| **Failed in creating destination folder.** | Failed to create the destination folder. Check the controller's storage capacity or permission settings. |
-| **Failed in copying file.** | Failed during the actual file copying process. Check if the source file is damaged or verify the USB connection status. |
-| **Fail: Invalid destination. Only '$(RemoteAppsDir)' or '$(RemoteReleaseDir)' are allowed.** | Invalid destination path specified when using `rcopy`. Make sure you used the permitted macros exactly in the target path. |
-| **Fail: Local source path does not exist.** | The local source path (inside the USB) specified in the command cannot be found. Check for typos in the path or verify that the actual file exists on the USB. |
-| **Fail: Network connection failed.** | Remote communication failed when executing `rcopy`. Check the network connection status between the TP and the controller (COM). |
-| **Fail: API 'isExist' / 'mkdir' / 'upload' / 'rdelete' call failed.** | Failed to call the file control API (inquiry/create/upload/delete) on the remote server. Check the controller's system status. |
-| **Fail: Source disappeared during scan. (Check USB connection)** | The source target disappeared during the file scan. Check if the USB connection was disconnected during installation. |
-| **Fail: Cannot open local file. (USB connection / File Permission issue)** | Failed to read the local file. Check the file's read permissions or for USB connection issues. |
-| **Fail: Process line crashed. / cannot be started. / failed.** | The external system command (`>`) process specified by the user did not execute normally or terminated abnormally during execution. |
+| **不支持的命令** | 不支持的命令。检查 `hrc_installer.cfg` 文件中的命令（`xcopy`，`rcopy` 等）是否有打字错误。 |
+| **删除先前文件夹失败。** | 在目标路径删除现有文件夹失败。这可能是控制器的内部权限问题，或文件可能正在使用中。 |
+| **创建目标文件夹失败。** | 创建目标文件夹失败。检查控制器的存储容量或权限设置。 |
+| **复制文件失败。** | 在实际文件复制过程中失败。检查源文件是否损坏或验证USB连接状态。 |
+| **失败：无效的目的地。只允许 '$(RemoteAppsDir)' 或 '$(RemoteReleaseDir)'。** | 使用 `rcopy` 时指定了无效的目标路径。确保在目标路径中准确使用了允许的宏。 |
+| **失败：本地源路径不存在。** | 命令中指定的本地源路径（USB内部）无法找到。检查路径中的打字错误或验证实际文件在USB上是否存在。 |
+| **失败：网络连接失败。** | 执行 `rcopy` 时远程通信失败。检查TP与控制器（COM）之间的网络连接状态。 |
+| **失败：API 'isExist' / 'mkdir' / 'upload' / 'rdelete' 调用失败。** | 在远程服务器上调用文件控制API（查询/创建/上传/删除）失败。检查控制器的系统状态。 |
+| **失败：扫描期间源消失。（检查USB连接）** | 在文件扫描期间源目标消失。检查在安装过程中USB连接是否断开。 |
+| **失败：无法打开本地文件。（USB连接/文件权限问题）** | 读取本地文件失败。检查文件的读取权限或USB连接问题。 |
+| **失败：进程行崩溃。/ 无法启动。/ 失败。** | 用户指定的外部系统命令（`>`）进程未正常执行或在执行期间异常终止。 |
 
 </div>

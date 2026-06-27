@@ -1,69 +1,64 @@
-﻿## 3.1 Run Installer
+## 3.1 运行安装程序
 
-Once the USB is ready, follow the steps below to run the installer.
+一旦 USB 准备好，请按照以下步骤运行安装程序。
 
-#### Step 1 
+#### 第一步
 
-Insert the USB memory stick prepared with the App Installer into the USB port of the TP.
+将准备好的应用程序安装程序的 USB 内存棒插入 TP 的 USB 端口。
 
 <figure>
   <img src="../_assets/0_usb_ready.png" style="max-height:200px;">
-  <figcaption>Fig 1. Prepared USB folder structure and configuration file contents</figcaption>
+  <figcaption>图 1. 准备好的 USB 文件夹结构和配置文件内容</figcaption>
 </figure>
 
-Check the USB connection status on the TP Home screen.
+检查 TP 主屏幕上的 USB 连接状态。
 
 <figure>
   <img src="../_assets/0_usb_ready_tp_home.png" style="max-height:350px;">
-  <figcaption>Fig 2. Checking the USB connection status on the taskbar</figcaption>
+  <figcaption>图 2. 在任务栏上检查 USB 连接状态</figcaption>
 </figure>
 
+#### 第二步
 
-
-#### Step 2
-
-Verify the App Installer.  
-- TP Home > Service > 10: App > Click Location > Click the App Installer you want to install
+验证应用程序安装程序。  
+- TP 主屏幕 > 服务 > 10: 应用 > 点击位置 > 点击您想要安装的应用程序安装程序
 
 <figure>
   <img src="../_assets/1_app_installer_list.png" style="max-height:350px;">
-  <figcaption>Fig 3. Verifying the Installer</figcaption>
+  <figcaption>图 3. 验证安装程序</figcaption>
 </figure>
 
+#### 第三步
 
-#### Step 3 
-
-Click the [F4: Run] button at the bottom of the app screen to execute the installer.
+点击应用程序屏幕底部的 [F4: 运行] 按钮以执行安装程序。
 
 <figure>
   <img src="../_assets/2_app_installer_executed.png" style="max-height:350px;">
-  <figcaption>Fig 4. Installer execution screen</figcaption>
+  <figcaption>图 4. 安装程序执行屏幕</figcaption>
 </figure>
 
-#### Step 4
+#### 第四步
 
-Click [START] to proceed with the installation.
+点击 [开始] 以继续安装。
 
 <figure>
   <img src="../_assets/3_app_installer_start.png" style="max-height:350px;">
-  <figcaption>Fig 5-1. Installer start screen</figcaption>
+  <figcaption>图 5-1. 安装程序开始屏幕</figcaption>
 </figure>
 
 <figure>
   <img src="../_assets/4_app_installer_finish.png" style="max-height:350px;">
-  <figcaption>Fig 5-2. Installer finish screen</figcaption>
+  <figcaption>图 5-2. 安装程序完成屏幕</figcaption>
 </figure>
 
+#### 第五步
 
-
-#### Step 5
-
-Once the installation is complete, click the [Exit] button to close the installer, and then `reboot the controller.`
+安装完成后，点击 [退出] 按钮以关闭安装程序，然后 `重启控制器。`
 
 <div style="max-width:fit-content;">
 
 {% hint style="warning" %}
-The installed APP will operate normally only after the controller is rebooted.
+安装的应用程序只有在控制器重启后才能正常运行。
 {% endhint %}
 
 </div>

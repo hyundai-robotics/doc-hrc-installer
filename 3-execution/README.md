@@ -1,3 +1,3 @@
-﻿# 3. Execution
+﻿# 3. 执行
 
-Using the prepared App Installer USB, proceed with the actual app installation and check the results.
+使用准备好的应用程序安装 USB，进行实际的应用程序安装并检查结果。

@@ -1,1 +1,1 @@
-﻿# ${cont_model} Controller Function Manual - App Installer 
+# ${cont_model} 控制器功能手册 - 应用程序安装程序

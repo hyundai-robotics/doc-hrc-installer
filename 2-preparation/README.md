@@ -1,6 +1,6 @@
-﻿# 2. Preparation
+﻿# 2. 准备
 
-This chapter explains the preparation steps for installation.
+本章节解释安装的准备步骤。
 
-2.1. [Download `App Installer`](./1-download.md)  
-2.2. [Write `App Installer` configuration file](./2-config.md)
+2.1. [下载 `App Installer`](./1-download.md)  
+2.2. [编写 `App Installer` 配置文件](./2-config.md)

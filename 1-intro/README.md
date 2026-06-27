@@ -1,10 +1,10 @@
-﻿# 1. Overview
+﻿# 1. 概述
 
-To fully understand this manual, you should be familiar with the following:
+要完全理解本手册，您应该熟悉以下内容：
 
-- [${cont_model} Controller Operation Manual - TP630](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=${cont_model})
-- [${cont_model} Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/README?cont_model=${cont_model})
-- [${cont_model} Controller Function Manual - SDK](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/en/README?cont_model=${cont_model})
-- [${cont_model} Controller Function Manual - Open API](https://hrbook-hrc.web.app/#/view/doc-hi6-open-api/en/README?cont_model=${cont_model})
+- [${cont_model} 控制器操作手册 - TP630](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/README?cont_model=${cont_model})
+- [${cont_model} 控制器功能手册 - 教学挂件应用](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/zh/README?cont_model=${cont_model})
+- [${cont_model} 控制器功能手册 - SDK](https://hrbook-hrc.web.app/#/view/doc-hi6-sdk/zh/README?cont_model=${cont_model})
+- [${cont_model} 控制器功能手册 - 开放 API](https://hrbook-hrc.web.app/#/view/doc-hi6-open-api/zh/README?cont_model=${cont_model})
 
-This manual provides instructions on how to install user-developed apps using the `hrc_installer`.
+本手册提供有关如何使用 `hrc_installer` 安装用户开发的应用程序的说明。

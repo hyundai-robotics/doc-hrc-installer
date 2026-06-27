@@ -1,22 +1,22 @@
-﻿# 4. Troubleshooting & Error Codes
+﻿# 4. 故障排除与错误代码
 
-If a `FAIL` occurs during installation, check the red error message printed in the log window and refer to the table below to identify the cause and take action.
+如果在安装过程中发生 `FAIL`，请检查日志窗口中打印的红色错误消息，并参考下表以识别原因并采取行动。
 
 <div style="max-width:fit-content;">
 
 
-| Error Message (Log Output) | Cause and Action |
+| 错误消息 (日志输出) | 原因和措施 |
 | :--- | :--- |
-| **Unsupported command** | Unsupported command. Check for typos in the commands (`xcopy`, `rcopy`, etc.) in the `hrc_installer.cfg` file. |
-| **Failed in deleting previous folder.** | Failed to delete an existing folder at the target path. It may be an internal permission issue on the controller, or the file might be in use. |
-| **Failed in creating destination folder.** | Failed to create the destination folder. Check the controller's storage capacity or permission settings. |
-| **Failed in copying file.** | Failed during the actual file copying process. Check if the source file is damaged or verify the USB connection status. |
-| **Fail: Invalid destination. Only '$(RemoteAppsDir)' or '$(RemoteReleaseDir)' are allowed.** | Invalid destination path specified when using `rcopy`. Make sure you used the permitted macros exactly in the target path. |
-| **Fail: Local source path does not exist.** | The local source path (inside the USB) specified in the command cannot be found. Check for typos in the path or verify that the actual file exists on the USB. |
-| **Fail: Network connection failed.** | Remote communication failed when executing `rcopy`. Check the network connection status between the TP and the controller (COM). |
-| **Fail: API 'isExist' / 'mkdir' / 'upload' / 'rdelete' call failed.** | Failed to call the file control API (inquiry/create/upload/delete) on the remote server. Check the controller's system status. |
-| **Fail: Source disappeared during scan. (Check USB connection)** | The source target disappeared during the file scan. Check if the USB connection was disconnected during installation. |
-| **Fail: Cannot open local file. (USB connection / File Permission issue)** | Failed to read the local file. Check the file's read permissions or for USB connection issues. |
-| **Fail: Process line crashed. / cannot be started. / failed.** | The external system command (`>`) process specified by the user did not execute normally or terminated abnormally during execution. |
+| **不支持的命令** | 不支持的命令。检查 `hrc_installer.cfg` 文件中的命令（`xcopy`，`rcopy` 等）是否有打字错误。 |
+| **删除先前文件夹失败。** | 在目标路径删除现有文件夹失败。这可能是控制器的内部权限问题，或文件可能正在使用中。 |
+| **创建目标文件夹失败。** | 创建目标文件夹失败。检查控制器的存储容量或权限设置。 |
+| **复制文件失败。** | 在实际文件复制过程中失败。检查源文件是否损坏或验证USB连接状态。 |
+| **失败：无效的目的地。只允许 '$(RemoteAppsDir)' 或 '$(RemoteReleaseDir)'。** | 使用 `rcopy` 时指定了无效的目标路径。确保在目标路径中准确使用了允许的宏。 |
+| **失败：本地源路径不存在。** | 命令中指定的本地源路径（USB内部）无法找到。检查路径中的打字错误或验证实际文件在USB上是否存在。 |
+| **失败：网络连接失败。** | 执行 `rcopy` 时远程通信失败。检查TP与控制器（COM）之间的网络连接状态。 |
+| **失败：API 'isExist' / 'mkdir' / 'upload' / 'rdelete' 调用失败。** | 在远程服务器上调用文件控制API（查询/创建/上传/删除）失败。检查控制器的系统状态。 |
+| **失败：扫描期间源消失。（检查USB连接）** | 在文件扫描期间源目标消失。检查在安装过程中USB连接是否断开。 |
+| **失败：无法打开本地文件。（USB连接/文件权限问题）** | 读取本地文件失败。检查文件的读取权限或USB连接问题。 |
+| **失败：进程行崩溃。/ 无法启动。/ 失败。** | 用户指定的外部系统命令（`>`）进程未正常执行或在执行期间异常终止。 |
 
 </div>
